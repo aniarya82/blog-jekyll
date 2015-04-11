@@ -1,14 +1,13 @@
 # Site settings
 title: Prepvocab
-email: your-email@domain.com
+email: prepvocab@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  GRE Picture Vocab & Flashcards provides an 
+  effective way of learning difficult vocabulary words.
 baseurl: "/blog-jekyll" # the subpath of your site, e.g. /blog/
 url: "http://prepvoacb.com" # the base hostname & protocol for your site
 twitter_username: hiten8080
-github_username:  jekyll
+github_username:  prepvocab
 
 # Build settings
 markdown: kramdown
