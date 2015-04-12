@@ -1,6 +1,17 @@
 ---
 layout: default
 ---
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=714982428573890";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 <div class="post">
 
   <header class="post-header">
@@ -8,8 +19,12 @@ layout: default
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
+  <i>{{ page.description }}</i>
+  <br><hr>
+
   <article class="post-content">
     {{ content }}
   </article>
+  <div class="fb-share-button" data-href="{{ post.url | prepend: site.baseurl }}" data-layout="icon"></div>
 
 </div>
